@@ -46,3 +46,140 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.content {
+	max-width: 30rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	padding: 0;
+}
+
+
+.top-navigation {
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	border-bottom: 1px solid #eaebec;
+/*	opacity: 0.4;
+    filter: alpha(opacity=40);*/
+}
+
+.top-navigation .content{
+	width: 65%;
+}
+
+.top-navigation .links {
+	float: right;
+	font-family: 'Cabin', sans-serif;
+	color: #422B56;
+	font-size: 1em;
+	margin-top: 1em;
+	-webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 30%;
+	margin-top: 1em;
+	margin-right: 30%;
+}
+
+.top-navigation .links li a {
+	text-decoration: none;
+	color: #422B56;
+}
+
+.top-navigation .links li a:hover {
+	 color: #BCA659;
+
+}
+.shopping-list {
+	margin-top: 100px;
+	display: block;
+	position: fixed;
+	margin-right: 30%;
+	margin-left: 30%;
+	border: solid 2px green;
+	padding-right: 1em;
+	padding-left: 1em;
+	border-radius: 20px;
+/*	max-width: 30rem;*/
+	/*width: 40%;
+*/
+}
+.shopping-list h1 {
+	text-align: center;
+	font-family: 'Cabin', sans-serif;
+	font-size: 2rem;
+	-webkit-font-smoothing: antialiased;
+}
+.list {
+	width: 100%;
+	padding: 0px;
+}
+/*.list ul{
+	margin:0px;
+	padding:0;
+	width: 100%;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;*/
+}
+
+.items-list {
+	display: list-item;
+	margin-top: 0.2rem;
+	width: 100%;
+}
+.items-list li {
+	margin: -20px;
+}
+
+.box {
+	font-size: 1.1em;
+	float: left;
+	margin-top: 0px;
+	margin-left: 0px;
+/*	height: 17px;
+	width: 17px;*/
+/*	max-width: 10%;*/
+}
+
+
+.items-list span {
+	display: inline-block;
+	max-width: 80%;
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.1em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	padding-bottom: 0.5em;
+	line-height: 110%;
+/*	letter-spacing: 0.01em;*/
+	-webkit-font-smoothing: antialiased;
+
+}
+
+.remove {
+	float: right;
+	margin-top: 3px;
+	max-width: 10%;
+}
+
+.text {
+	width: 80%;
+}
+
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.clear{
+	clear:both;
+	height:1px;
