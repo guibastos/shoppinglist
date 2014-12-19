@@ -118,6 +118,7 @@ table {
 .list {
 	width: 100%;
 	padding: 0px;
+	display: inline-block;
 }
 /*.list ul{
 	margin:0px;
@@ -133,10 +134,22 @@ table {
 .items-list {
 	display: list-item;
 	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	padding-top: 0.5em;
 	width: 100%;
+	padding-bottom: 0.6em;
+	line-height: 110%;
 }
+
+.list :hover {
+	background-color: gray;
+	border-radius: 0.4em;
+}
+
 .items-list li {
-	margin: -20px;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.7em;
 }
 
 .box {
@@ -144,9 +157,13 @@ table {
 	float: left;
 	margin-top: 0px;
 	margin-left: 0px;
+	max-width: 10%;
+	padding-top: 0.7rem;
+	padding-left: 0.4rem;
+	padding-bottom: 0.5em;
+	line-height: 110%;
 /*	height: 17px;
 	width: 17px;*/
-/*	max-width: 10%;*/
 }
 
 
@@ -159,6 +176,7 @@ table {
 	padding-right: 0.4em;
 	padding-bottom: 0.5em;
 	line-height: 110%;
+	padding-top: 0.7rem;
 /*	letter-spacing: 0.01em;*/
 	-webkit-font-smoothing: antialiased;
 
@@ -166,13 +184,21 @@ table {
 
 .remove {
 	float: right;
-	margin-top: 3px;
+	margin-top: 0px;
 	max-width: 10%;
+	padding-top: 0.7rem;
+	padding-right: 0.4rem;
+	padding-bottom: 0.5em;
+	line-height: 110%;
 }
 
-.text {
-	width: 80%;
+.remove :hover {
+	color: red;
 }
+
+/*.text {
+	width: 80%;
+}*/
 
 .fl {
 	float:left;
@@ -183,3 +209,39 @@ table {
 .clear{
 	clear:both;
 	height:1px;
+}
+.form-button {
+	display: block;
+/*	text-align: center;*/
+	width: 90%;
+	padding-right: 5%;
+	padding-left: 5%;
+	max-width: 90%;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #eaebec;
+
+}
+.forms {
+	float: left;
+	margin-right: 0.5rem;
+}
+.forms input {
+	width: 11.5rem;
+	font-size: 1rem;
+	padding: 0.5rem;
+}
+
+button {
+	width: 8rem;
+	background-color: #f15a29;
+	border-color: #f15a29;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 0.5rem;
+	color: white;
+	font-size: 1rem;
+	float: right;
+/*	display: block;*/
+/*	margin: 0 auto;*/
+}
