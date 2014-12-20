@@ -211,7 +211,7 @@ table {
 	height:1px;
 }
 .form-button {
-	display: block;
+	display: inline-block;
 /*	text-align: center;*/
 	width: 90%;
 	padding-right: 5%;
@@ -223,16 +223,16 @@ table {
 }
 .forms {
 	float: left;
-	margin-right: 0.5rem;
+	margin-right: 0.2rem;
 }
 .forms input {
-	width: 11.5rem;
+	width: 7em;
 	font-size: 1rem;
 	padding: 0.5rem;
 }
 
 button {
-	width: 7rem;
+	width: 6em;
 	background-color: #f15a29;
 	border-color: #f15a29;
 	text-shadow: none;
