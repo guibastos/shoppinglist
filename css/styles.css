@@ -47,68 +47,31 @@ table {
 	border-spacing: 0;
 }
 
-.content {
-	max-width: 30rem;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
-	padding: 0;
-}
-
-
-.top-navigation {
-	background-color: #fff;
-	position: fixed;
-	width: 100%;
-	z-index: 9999;
-	border-bottom: 1px solid #eaebec;
-/*	opacity: 0.4;
-    filter: alpha(opacity=40);*/
-}
-
-.top-navigation .content{
-	width: 65%;
-}
-
-.top-navigation .links {
-	float: right;
-	font-family: 'Cabin', sans-serif;
-	color: #422B56;
-	font-size: 1em;
-	margin-top: 1em;
-	-webkit-font-smoothing: antialiased;
-}
-
-.top-navigation .links li {
-	display: inline-block;
-	margin-left: 30%;
-	margin-top: 1em;
-	margin-right: 30%;
-}
-
-.top-navigation .links li a {
-	text-decoration: none;
-	color: #422B56;
-}
-
-.top-navigation .links li a:hover {
-	 color: #BCA659;
+html {
+	background-image: url("../images/shopping_supermarket3.jpg");
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: auto;
+	height: 100%;
 
 }
+
 .shopping-list {
-	margin-top: 100px;
+	margin: 2rem auto;
 	display: block;
-	position: fixed;
-	margin-right: 30%;
-	margin-left: 30%;
-	border: solid 2px green;
+	position: relative;
+	max-width: 400px;
+	width: 90%;
+	border: solid 1px #F0EEEA;
 	padding-right: 1em;
 	padding-left: 1em;
 	border-radius: 20px;
-/*	max-width: 30rem;*/
-	/*width: 40%;
-*/
+	background-color: #F0EEEA;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
 }
+
 .shopping-list h1 {
 	text-align: center;
 	font-family: 'Cabin', sans-serif;
@@ -120,29 +83,18 @@ table {
 	padding: 0px;
 	display: inline-block;
 }
-/*.list ul{
-	margin:0px;
-	padding:0;
-	width: 100%;
-	-webkit-margin-before: 1em;
-	-webkit-margin-after: 1em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
-	-webkit-padding-start: 0px;*/
-}
 
 .items-list {
 	display: list-item;
-	margin-top: 0.2rem;
-	margin-bottom: 0.2rem;
-	padding-top: 0.5em;
+	margin: 0;
 	width: 100%;
-	padding-bottom: 0.6em;
+	padding-bottom: 0.2em;
 	line-height: 110%;
+	cursor: move;
 }
 
 .list :hover {
-	background-color: gray;
+	background-color: #D59127;
 	border-radius: 0.4em;
 }
 
@@ -150,6 +102,7 @@ table {
 	margin: 0;
 	padding-top: 0.5em;
 	padding-bottom: 0.7em;
+
 }
 
 .box {
@@ -162,8 +115,7 @@ table {
 	padding-left: 0.4rem;
 	padding-bottom: 0.5em;
 	line-height: 110%;
-/*	height: 17px;
-	width: 17px;*/
+	cursor:pointer;
 }
 
 
@@ -177,10 +129,22 @@ table {
 	padding-bottom: 0.5em;
 	line-height: 110%;
 	padding-top: 0.7rem;
-/*	letter-spacing: 0.01em;*/
 	-webkit-font-smoothing: antialiased;
 
 }
+.fa-check-square {
+	color: #7AA521;
+}
+
+.checked {
+	color: #7AA521;
+	text-decoration: line-through;
+}
+
+.unchecked {
+	color: #26201D;
+}
+
 
 .remove {
 	float: right;
@@ -190,15 +154,14 @@ table {
 	padding-right: 0.4rem;
 	padding-bottom: 0.5em;
 	line-height: 110%;
+	color: #26201D;
+	display: none;
 }
 
 .remove :hover {
-	color: red;
+	color: #721215;
+	cursor: pointer;
 }
-
-/*.text {
-	width: 80%;
-}*/
 
 .fl {
 	float:left;
@@ -212,29 +175,31 @@ table {
 }
 .form-button {
 	display: inline-block;
-/*	text-align: center;*/
-	width: 90%;
-	padding-right: 5%;
-	padding-left: 5%;
-	max-width: 90%;
+	width: 100%;
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #eaebec;
+	text-align: center;
 
 }
 .forms {
 	float: left;
-	margin-right: 0.2rem;
+	margin-right: 0.1rem;
+	position: relative;
+	width: 70%;
 }
 .forms input {
-	width: 7em;
+	margin: 0;
+	width: 90%;
+	position: relative;
+	float: left;
 	font-size: 1rem;
 	padding: 0.5rem;
 }
 
 button {
 	width: 6em;
-	background-color: #f15a29;
-	border-color: #f15a29;
+	background-color: #ED4852;
+	border-color: #ED4852;
 	text-shadow: none;
 	border-style: none;
 	border-radius: 4px;
@@ -242,6 +207,12 @@ button {
 	color: white;
 	font-size: 1rem;
 	float: right;
-/*	display: block;*/
-/*	margin: 0 auto;*/
 }
+
+button:hover {
+	background-color: #B0353D;
+	border-color: #B0353D;
+	cursor: pointer;
+
+}
+
