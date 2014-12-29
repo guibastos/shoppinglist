@@ -105,7 +105,7 @@ html {
 
 }
 
-.box {
+/*.box {
 	font-size: 1.1em;
 	float: left;
 	margin-top: 0px;
@@ -116,8 +116,45 @@ html {
 	padding-bottom: 0.5em;
 	line-height: 110%;
 	cursor:pointer;
+}*/
+
+/*.box {
+	font-size: 1.1em;
+	float: left;
+	margin-top: 0px;
+	margin-left: 0px;
+	max-width: 10%;
+	padding-top: 0.7rem;
+	padding-left: 0.4rem;
+	padding-bottom: 0.5em;
+	line-height: 110%;
+	cursor:pointer;
+	border: 1px solid red;
+}*/
+
+.box-unchecked, .box-checked {
+	font-size: 1.1em;
+	float: left;
+	margin-top: 0px;
+	margin-left: 0px;
+	max-width: 10%;
+	padding-top: 0.7rem;
+	padding-left: 0.4rem;
+	padding-bottom: 0.5em;
+	line-height: 110%;
+/*	cursor:pointer;*/
 }
 
+.box-unchecked {
+	display: inline-block;
+}
+.box-checked {
+	display: none;
+}
+
+.items-list i {
+	cursor: pointer;
+}
 
 .items-list span {
 	display: inline-block;
@@ -132,17 +169,17 @@ html {
 	-webkit-font-smoothing: antialiased;
 
 }
-.fa-check-square {
-	color: #7AA521;
-}
 
-.checked {
-	color: #7AA521;
-	text-decoration: line-through;
-}
 
-.unchecked {
+
+
+.text-unchecked {
 	color: #26201D;
+}
+
+.text-checked {
+/*	color: #7AA521;*/
+	text-decoration: line-through;
 }
 
 
@@ -214,5 +251,10 @@ button:hover {
 	border-color: #B0353D;
 	cursor: pointer;
 
+}
+
+.fa-check-square {
+/*	color: #7AA521;*/
+	color: #26201D;
 }
 
