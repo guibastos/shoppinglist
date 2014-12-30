@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	function addItem () {
     	var input = $('#myInput').val();
-    	var myVar = $.trim($('#myInput').val()); 
+    	var tr_input = $.trim(input); 
 			if(myVar.length > 0){
   			//Proced further
 				$('.list')
