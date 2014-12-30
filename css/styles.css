@@ -91,11 +91,7 @@ html {
 	padding-bottom: 0.2em;
 	line-height: 110%;
 	cursor: move;
-<<<<<<< HEAD
 	clear: both;
-=======
-	clear:both;
->>>>>>> 27879f991f1c6ab91aabcfff61307a9facab7f84
 }
 
 .list :hover {
