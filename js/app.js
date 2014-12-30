@@ -1,14 +1,23 @@
 $(document).ready(function() {
 	function addItem () {
     	var input = $('#myInput').val();
-    	$('.list')
-    		.append("<li class='items-list'><div class='box-unchecked'><i class='fa fa-square-o'></i></div><span class='text-unchecked'>" + input + "</span><div class= 'remove'><i class='fa fa-trash'></i></div></li><div class='clear>&nbsp;</div>");
+    	var myVar = $.trim($('#myInput').val()); 
+			if(myVar.length > 0){
+  			//Proced further
+				$('.list')
+    				.append("<li class='items-list'><div class='box-unchecked'><i class='fa fa-square-o'></i></div><span class='text-unchecked'>" + input + "</span><div class= 'remove'><i class='fa fa-trash'></i></div></li><div class='clear>&nbsp;</div>");
+				$('#myInput').val('');
+			}
+			else{
+  			//some error handlings.
+			return false; // If it is form submit
+			}
 		}
 
 	$('#myButton').on('click', addItem);
-	$('#myButton').on('click',function() {
-		$('#myInput').removeData(input);
-	});
+	// $('#myButton').on('click',function() {
+	// 	$('#myInput').removeData(input);
+	// });
 
   //   $('.items-list')
   //   	.mouseenter(function() {
