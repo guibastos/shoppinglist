@@ -3,12 +3,11 @@ $(document).ready(function() {
     	var input = $('#myInput').val();
     	$('.list')
     		.append("<li class='items-list'><div class='box-unchecked'><i class='fa fa-square-o'></i></div><span class='text-unchecked'>" + input + "</span><div class= 'remove'><i class='fa fa-trash'></i></div></li><div class='clear>&nbsp;</div>");
+		$('#myInput').val('');
 		}
+		
 
 	$('#myButton').on('click', addItem);
-	$('#myButton').on('click',function() {
-		$('#myInput').removeData(input);
-	});
 
   //   $('.items-list')
   //   	.mouseenter(function() {
