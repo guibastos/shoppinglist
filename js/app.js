@@ -11,7 +11,12 @@ $(document).ready(function() {
 				$('#myInput').val('');
 				return false;
 			}
+
+    	$('.list')
+    		.append("<li class='items-list'><div class='box-unchecked'><i class='fa fa-square-o'></i></div><span class='text-unchecked'>" + input + "</span><div class= 'remove'><i class='fa fa-trash'></i></div></li>");
+		$('#myInput').val('');
 		}
+		
 
 	$('#myButton').on('click', addItem);
 
@@ -21,7 +26,6 @@ $(document).ready(function() {
         addItem();
     	}
 	});
-
 
     $('.list').on("mouseenter",".items-list",function() {
     	$(this).closest('.items-list').find('.remove').show();
