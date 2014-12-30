@@ -10,6 +10,7 @@ $(document).ready(function() {
 			}
 			else{
   			//some error handlings.
+			$('#myInput').val('');
 			return false; // If it is form submit
 			}
 		}
