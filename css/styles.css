@@ -91,6 +91,7 @@ html {
 	padding-bottom: 0.2em;
 	line-height: 110%;
 	cursor: move;
+	clear: both;
 }
 
 .list :hover {

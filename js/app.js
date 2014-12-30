@@ -5,7 +5,7 @@ $(document).ready(function() {
 			if(tr_input.length > 0){
   			//Proced further
 				$('.list')
-    				.append("<li class='items-list'><div class='box-unchecked'><i class='fa fa-square-o'></i></div><span class='text-unchecked'>" + input + "</span><div class= 'remove'><i class='fa fa-trash'></i></div></li><div class='clear>&nbsp;</div>");
+    				.append($("<li class='items-list'><div class='box-unchecked'><i class='fa fa-square-o'></i></div><span class='text-unchecked'>" + tr_input + "</span><div class= 'remove'><i class='fa fa-trash'></i></div></li>").hide().fadeIn(600));
 				$('#myInput').val('');
 			}
 			else{
