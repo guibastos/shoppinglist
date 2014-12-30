@@ -2,7 +2,7 @@ $(document).ready(function() {
 	function addItem () {
     	var input = $('#myInput').val();
     	var tr_input = $.trim(input); 
-			if(myVar.length > 0){
+			if(tr_input.length > 0){
   			//Proced further
 				$('.list')
     				.append("<li class='items-list'><div class='box-unchecked'><i class='fa fa-square-o'></i></div><span class='text-unchecked'>" + input + "</span><div class= 'remove'><i class='fa fa-trash'></i></div></li><div class='clear>&nbsp;</div>");
